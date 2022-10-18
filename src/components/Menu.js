@@ -5,9 +5,10 @@ import menuData from "../data/data";
 
 function Menu() {
 	const [menu, setMeny] = useState(menuData);
+	const categories = [...new Set(menu.map((item) => item.category))];
 	return (
 		<>
-			<Navbar />
+			<Navbar categories={categories} />
 			<MenuList />
 		</>
 	);

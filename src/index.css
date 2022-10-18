@@ -128,6 +128,11 @@ p {
 	flex-direction: column;
 	align-items: center;
 }
+.navbar {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
 .underline {
 	width: 6rem;
 	height: 0.3rem;

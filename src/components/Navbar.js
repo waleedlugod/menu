@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Navbar() {
-	return <div>Navbar</div>;
+function Navbar({ categories }) {
+	const cats = ["All", ...categories];
+	return (
+		<div className="navbar">
+			{["All", ...categories].map((item) => {
+				return <button key={item}>{item}</button>;
+			})}
+		</div>
+	);
 }
 
 export default Navbar;
