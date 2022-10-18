@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
-import MenuList from "./MenuList";
+import Item from "./Item";
 import menuData from "../data/data";
 
 function Menu() {
@@ -9,7 +9,12 @@ function Menu() {
 	return (
 		<>
 			<Navbar categories={categories} />
-			<MenuList />
+			<div className="menu-list">
+				{menu.map((item) => {
+					console.log(item);
+					return <Item key={item.id} {...item} />;
+				})}
+			</div>
 		</>
 	);
 }

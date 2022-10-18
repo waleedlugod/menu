@@ -5,7 +5,11 @@ function Navbar({ categories }) {
 	return (
 		<div className="navbar">
 			{["All", ...categories].map((item) => {
-				return <button key={item}>{item}</button>;
+				return (
+					<button className="category" key={item}>
+						{item}
+					</button>
+				);
 			})}
 		</div>
 	);
