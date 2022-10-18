@@ -7,7 +7,7 @@ function Item({ title, category, price, img, desc }) {
 			<div className="item-info">
 				<div className="info-header">
 					<h4>{title}</h4>
-					<h4>{price}</h4>
+					<h4 className="price">${price}</h4>
 				</div>
 				<p>{desc}</p>
 			</div>
