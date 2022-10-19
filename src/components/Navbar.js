@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 function Navbar({ categories, filterCategories }) {
-	const cats = ["All", ...categories];
 	return (
 		<div className="navbar">
 			{["all", ...categories].map((cat) => {
